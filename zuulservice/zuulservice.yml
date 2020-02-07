@@ -1,0 +1,18 @@
+zuul:
+  ignored-services: "*"
+  sensitive-headers: Cookie,Set-Cookie
+  prefix: /api
+  routes:
+    organizationservice: /organization/**
+    licensingservice: /licensing/**
+  debug:
+    request: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeout-in-milliseconds: 2500
+
