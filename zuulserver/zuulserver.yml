@@ -3,8 +3,12 @@ zuul:
   sensitive-headers: Cookie,Set-Cookie
   prefix: /api
   routes:
-    organizationservice: /organization/**
-    licensingservice: /licensing/**
+    organizationservice:
+      path: /organization/**
+      strip-prefix: true
+    licensingservice:
+      path: /licensing/**
+      strip-prefix: true
   debug:
     request: true
 
