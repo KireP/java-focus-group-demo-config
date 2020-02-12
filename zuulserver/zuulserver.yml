@@ -5,11 +5,11 @@ zuul:
   routes:
     organizationservice:
       path: /organization/**
-      service-id: organizationservice
+      serviceId: organizationservice
       strip-prefix: true
     licensingservice:
       path: /licensing/**
-      service-id: licensingservice
+      serviceId: licensingservice
       strip-prefix: true
   debug:
     request: true
