@@ -1,1 +1,1 @@
-# Java Focus Group Demo config
+# Java Focus Group Demo Config
