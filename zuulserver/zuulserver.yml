@@ -19,3 +19,5 @@ hystrix:
 ribbon:
   connect-timeout: 10000
   read-timeout: 10000
+  eager-load:
+    enabled: true
