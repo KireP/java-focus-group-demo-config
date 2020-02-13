@@ -24,5 +24,3 @@ ribbon:
   ReadTimeout:  10000
   eager-load:
     enabled: true
-  eureka:
-    enabled: true
