@@ -19,8 +19,6 @@ hystrix:
           thread:
             timeout-in-milliseconds: 10000
 
-# ribbon:
-#   connect-timeout: 10000
-#   read-timeout: 10000
-#   eager-load:
-#     enabled: true
+ribbon:
+  eager-load:
+    enabled: true
