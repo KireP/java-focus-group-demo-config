@@ -5,6 +5,9 @@ zuul:
   routes:
     organizationservice: /organization/**
     licensingservice: /licensing/**
+  ribbon:
+    eager-load:
+      enabled: true
   debug:
     request: true
 
@@ -16,8 +19,8 @@ hystrix:
           thread:
             timeout-in-milliseconds: 10000
 
-ribbon:
-  connect-timeout: 10000
-  read-timeout: 10000
-  eager-load:
-    enabled: true
+# ribbon:
+#   connect-timeout: 10000
+#   read-timeout: 10000
+#   eager-load:
+#     enabled: true
