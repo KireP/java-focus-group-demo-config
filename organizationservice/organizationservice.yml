@@ -2,7 +2,7 @@ spring:
   datasource:
     url: "jdbc:postgresql://localhost:5432/java_focus_group_demo"
     username: "java_focus_group_demo"
-    password: "p0stgr@s"
+    password: "java_focus_group_demo"
     driver-class-name: "org.postgresql.Driver"
     initialization-mode: "always"
   jpa:
